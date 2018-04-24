@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         id="WebApp_ID" version="3.0">
+
+  <display-name>Project Rest API</display-name>
+
+  <listener>
+      <listener-class>
+          org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap
+      </listener-class>
+  </listener>
+
+  <servlet>
+      <servlet-name>resteasy</servlet-name>
+      <servlet-class>
+          org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
+      </servlet-class>
+      <init-param>
+          <param-name>javax.ws.rs.Application</param-name>
+          <param-value>com.project.ws.MyRESTApplication</param-value>
+      </init-param>
+  </servlet>
+
+  <servlet-mapping>
+      <servlet-name>resteasy </servlet-name>
+      <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+    <!-- Auto scan REST service -->
+    <context-param>
+        <param-name>resteasy.scan</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <!-- this should be the same URL pattern as the servlet-mapping property -->
+    <context-param>
+        <param-name>resteasy.servlet.mapping.prefix</param-name>
+        <param-value>/rest</param-value>
+    </context-param>
+
+
+</web-app>
