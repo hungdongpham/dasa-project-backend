@@ -53,7 +53,6 @@ public class dropbox {
             con.setRequestProperty("Content-Type", "application/json");
             String urlParameters = "{\"oauth1_token\":\"" + oauth1_token + "\"" +
                     ",\"oauth1_token_secret\":\"" + oauth1_token_secret + "\"}";
-            ;
             con.setDoOutput(true);
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
             wr.writeBytes(urlParameters);
