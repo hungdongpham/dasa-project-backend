@@ -1,1 +1,1 @@
-web: java -jar ./tools/jetty-runner.jar target/*.war
+web: java $JAVA_OPTS -jar ./tools/jetty-runner.jar --port $PORT target/*.war
