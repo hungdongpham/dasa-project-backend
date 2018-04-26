@@ -156,6 +156,25 @@ public class googleDrive {
             Object obj1 = parser.parse(response.toString());
             JSONObject jsonObject = (JSONObject) obj1;
 
+            if(fileId==null && jsonObject.containsKey("items")){
+                //get file in root
+                JSONArray list_items = (JSONArray) jsonObject.get("items");
+                JSONArray list_items_in_root = new JSONArray();
+                for ( Object item: list_items) {
+                    JSONObject itemObj = (JSONObject) item;
+                    if(itemObj.containsKey("parents")){
+                        JSONArray parents = (JSONArray) itemObj.get("parents");
+                        for(Object parent : parents){
+                            JSONObject parentObj = (JSONObject) parent;
+                            if(parentObj.containsKey("isRoot") && (Boolean) parentObj.get("isRoot")== true){
+                                list_items_in_root.add(itemObj);
+                            }
+                        }
+                    }
+
+                }
+                jsonObject.put("items", list_items_in_root);
+            }
             return new ResponseMessage(con.getResponseCode(), jsonObject);
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
@@ -263,6 +282,22 @@ public class googleDrive {
             System.out.println(response.toString());
             Object obj1 = parser.parse(response.toString());
             JSONObject jsonObject = (JSONObject) obj1;
+
+            if(jsonObject.containsKey("items")){
+                JSONArray list_items = (JSONArray) jsonObject.get("items");
+                JSONArray list_items_detail = new JSONArray();
+                for ( Object item: list_items) {
+                    JSONObject itemObj = (JSONObject) item;
+                    if(itemObj.containsKey("id")){
+                        String id = (String) itemObj.get("id");
+                        ResponseMessage fileInfo = getFileInfo(id);
+                        list_items_detail.add(fileInfo.getResponse());
+                    }
+
+                }
+                jsonObject.put("items", list_items_detail);
+            }
+
             return new ResponseMessage(con.getResponseCode(), jsonObject);
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
@@ -421,7 +456,6 @@ public class googleDrive {
             String fileid = (String) jsonObject.get("id");
             System.out.println("ID: " + fileid);
             return new ResponseMessage(200, jsonObject);
-//            return renameFile(fileid, filename, folderId);
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -439,11 +473,11 @@ public class googleDrive {
         return new ResponseMessage(502, serverErr);
     }
 
-    public ResponseMessage renameFile(String fileid, String filename, String folderId) throws ParseException {
+    public ResponseMessage renameFile(String fileid, String filename) throws ParseException {
         JSONObject serverErr = new JSONObject();
         serverErr.put("message", "Internal server error");
 
-        String url = "https://www.googleapis.com/drive/v3/files/" + fileid;
+        String url = "https://www.googleapis.com/drive/v2/files/" + fileid;
         URL obj;
         JSONParser parser = new JSONParser();
 
@@ -455,7 +489,7 @@ public class googleDrive {
             con.setRequestProperty("Authorization", "Bearer " + TOKEN);
             con.setRequestProperty("Content-Type", "application/json");
             con.setDoOutput(true);
-            String urlParameters = "{\"name\":\"" + filename + "\"}";
+            String urlParameters = "{\"title\":\"" + filename + "\"}";
 
             con.setDoOutput(true);
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());

@@ -9,7 +9,7 @@ public class User {
     public User(){
 
     }
-    public User(String username, String password, String googleDriveEmailAddress, String dropBoxEmailAddress, String token) {
+    public User(String username, String password, String token) {
         this.username = username;
         this.password = password;
         this.token = token;
