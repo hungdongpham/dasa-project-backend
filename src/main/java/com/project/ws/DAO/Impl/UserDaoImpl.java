@@ -2,13 +2,12 @@ package com.project.ws.DAO.Impl;
 
 import com.mysql.jdbc.PreparedStatement;
 import com.project.ws.DAO.UserDAO;
-import com.project.ws.Model.ErrorMessage;
+import com.project.ws.Model.ResponseMessage;
 import com.project.ws.Model.User;
-import com.project.ws.MyRESTApplication;
 import com.project.ws.common.Utils;
 import com.project.ws.services.DatabaseConnection;
+import org.json.simple.JSONObject;
 
-import javax.sql.DataSource;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -59,15 +58,17 @@ public class UserDaoImpl implements UserDAO {
         }
     }
     @Override
-    public Object createNewUser(User user) throws SQLException {
+    public ResponseMessage createNewUser(User user) throws SQLException {
         System.out.println("create new user");
+        JSONObject errorMessage = new JSONObject();
         if(user.getUsername()==null){
-            return new ErrorMessage(400, "Missing username");
+            errorMessage.put("message", "Missing username");
+            return new ResponseMessage(400, errorMessage);
         }
         if(user.getPassword()==null){
-            return new ErrorMessage(400, "Missing password");
+            errorMessage.put("message", "Missing password");
+            return new ResponseMessage(400, errorMessage);
         }
-//        return user;
         String token;
         try {
             token = Utils.sha256(user.getUsername());
@@ -85,7 +86,8 @@ public class UserDaoImpl implements UserDAO {
             pstmt.setString(1, user.getUsername());
             ResultSet resultSet = pstmt.executeQuery();
             if (resultSet.next()){
-                return new ErrorMessage(400, "Username already exist");
+                errorMessage.put("message", "Username already exist");
+                return new ResponseMessage(400, errorMessage);
             } else {
 
                 query = "INSERT  INTO  USER (user_name, password, token)  VALUES  (?,?,?)";
@@ -95,7 +97,7 @@ public class UserDaoImpl implements UserDAO {
                 pstmt.setString(2, user.getPassword());
                 pstmt.setString(3, user.getToken());
                 pstmt.executeUpdate();
-                return user;
+                return new ResponseMessage(200, user.convertUserToJSONResponse());
 
             }
         } else{
@@ -112,23 +114,28 @@ public class UserDaoImpl implements UserDAO {
                 }
             }
             if(usernameExisted){
-                return new ErrorMessage(400, "Username already exist");
+                errorMessage.put("message", "Username already exist");
+                return new ResponseMessage(400, errorMessage);
             } else{
                 listUser.put(token, user);
-                return user;
+                return new ResponseMessage(200, user.convertUserToJSONResponse());
             }
         }
 
     }
 
     @Override
-    public Object signin(User user) throws SQLException {
+    public ResponseMessage signin(User user) throws SQLException {
+
         System.out.println("signin");
+        JSONObject errorMessage = new JSONObject();
         if(user.getUsername()==null){
-            return new ErrorMessage(400, "Missing username");
+            errorMessage.put("message", "Missing username");
+            return new ResponseMessage(400, errorMessage);
         }
         if(user.getPassword()==null){
-            return new ErrorMessage(400, "Missing password");
+            errorMessage.put("message", "Missing password");
+            return new ResponseMessage(400, errorMessage);
         }
 
         if(conn!=null){
@@ -139,19 +146,20 @@ public class UserDaoImpl implements UserDAO {
             pstmt.setString(1, user.getUsername());
             ResultSet resultSet = pstmt.executeQuery();
             if (resultSet.next()){
-//            return (resultSet.getInt(1) > 0);
                 System.out.println(resultSet.getString("password"));
                 System.out.println(user.getPassword());
                 if(!resultSet.getString("password").equals(user.getPassword())){
-                    return new ErrorMessage(401, "Password incorrect");
+                    errorMessage.put("message", "Password incorrect");
+                    return new ResponseMessage(401, errorMessage);
                 }
 
-                return new User(user.getUsername(),
-                        user.getPassword(),
-                        resultSet.getString("token"));
+                user.setToken(resultSet.getString("token"));
+
+                return new ResponseMessage(200, user.convertUserToJSONResponse());
             }
             else{
-                return new ErrorMessage(401, "Username not existed");
+                errorMessage.put("message", "Username not existed");
+                return new ResponseMessage(401, errorMessage);
             }
         } else{
             //use the fake database
@@ -168,22 +176,26 @@ public class UserDaoImpl implements UserDAO {
                 }
             }
             if(!usernameExisted){
-                return new ErrorMessage(401, "Username not existed");
+                errorMessage.put("message", "Username not existed");
+                return new ResponseMessage(401, errorMessage);
             } else{
                 if(existedUser!=null && existedUser.getPassword().equals(user.getPassword())){
-                    return existedUser;
+                    return new ResponseMessage(200, existedUser.convertUserToJSONResponse());
                 }
-                return new ErrorMessage(401, "Password incorrect");
+                errorMessage.put("message", "Password incorrect");
+                return new ResponseMessage(401, errorMessage);
             }
         }
 
     }
 
     @Override
-    public Object getUserByToken(User user) throws SQLException {
+    public ResponseMessage getUserByToken(User user) throws SQLException {
         System.out.println("get user by token");
+        JSONObject errorMessage = new JSONObject();
         if(user.getToken()==null){
-            return new ErrorMessage(400, "Missing authorization");
+            errorMessage.put("message", "Missing authorization");
+            return new ResponseMessage(400, errorMessage);
         }
         if(conn!=null){
             //can create an connect to the mysql database
@@ -193,13 +205,14 @@ public class UserDaoImpl implements UserDAO {
             pstmt.setString(1, user.getToken());
             ResultSet resultSet = pstmt.executeQuery();
             if (resultSet.next()){
-//            return (resultSet.getInt(1) > 0);
-                return new User(resultSet.getString("user_name"),
-                        resultSet.getString("password"),
-                        resultSet.getString("token"));
+                JSONObject userObj = new JSONObject();
+                user.setUsername(resultSet.getString("user_name"));
+                user.setToken(resultSet.getString("token"));
+                return new ResponseMessage(200, user.convertUserToJSONResponse());
             }
             else{
-                return new ErrorMessage(401, "No authorized");
+                errorMessage.put("message", "No authorized");
+                return new ResponseMessage(401, errorMessage);
             }
         } else{
             //use the fake database
@@ -209,9 +222,10 @@ public class UserDaoImpl implements UserDAO {
             User existedUser= listUser.get(user.getToken());
 
             if(existedUser==null){
-                return new ErrorMessage(401, "No authorized");
+                errorMessage.put("message","No authorized");
+                return new ResponseMessage(401, errorMessage);
             } else{
-                return existedUser;
+                return new ResponseMessage(200, existedUser.convertUserToJSONResponse());
             }
         }
 

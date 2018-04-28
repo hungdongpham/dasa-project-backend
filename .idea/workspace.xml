@@ -2,98 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82fa64e6-0d1c-45f1-8dfa-b6d6574b734c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_client_google_api_client_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_apis_google_api_services_drive_v2_rev306_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_jackson2_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_2_16.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_5_0_b01.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jsr173_api_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_18.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_james_apache_mime4j_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_apache_jsp_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_apache_jstl_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jaas_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_runner_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_toolchain_jetty_schemas_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_4_9_v20180320.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_jaxrs_api_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_client_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jackson_provider_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxb_provider_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxrs_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_resteasy_resteasy_multipart_provider_3_0_7_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_1_spec_1_0_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jasper_apache_el_8_5_24_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jasper_apache_jsp_8_5_24_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_6_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/project.iml" />
-      <change beforePath="$PROJECT_DIR$/Project.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/Model/ErrorMessage.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/common/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/common/Utils.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java" afterPath="$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/DAO/Impl/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/DAO/Impl/UserDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/DAO/UserDAO.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/Model/ErrorMessage.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/Model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/Model/User.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/apiServices/dropbox.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/apiServices/dropbox.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/apiServices/googleDrive.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/apiServices/googleDrive.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/common/Utils.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/common/Utils.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/services/DatabaseConnection.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/services/DatabaseConnection.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/services/fileService.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/services/fileService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/ws/services/userService.class" afterPath="$PROJECT_DIR$/target/classes/com/project/ws/services/userService.class" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dropbox.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dropbox.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="482" column="60" lean-forward="true" selection-start-line="482" selection-start-column="60" selection-end-line="482" selection-end-column="60" />
+            <state relative-caret-position="186">
+              <caret line="482" column="60" lean-forward="false" selection-start-line="482" selection-start-column="60" selection-end-line="482" selection-end-column="60" />
               <folding>
                 <element signature="method#RefreshToken#0;class#dropbox#0" expanded="false" />
                 <element signature="method#getAuthorizeInfo#0;class#dropbox#0" expanded="false" />
@@ -123,10 +43,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2925">
+              <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="googleDrive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="5831">
               <caret line="491" column="44" lean-forward="false" selection-start-line="491" selection-start-column="44" selection-end-line="491" selection-end-column="44" />
               <folding>
                 <element signature="method#getAuthorizeInfo#0;class#googleDrive#0" expanded="false" />
@@ -142,8 +86,8 @@
       <file leaf-file-name="fileService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="341" column="59" lean-forward="false" selection-start-line="341" selection-start-column="53" selection-end-line="341" selection-end-column="59" />
+            <state relative-caret-position="1993">
+              <caret line="354" column="100" lean-forward="true" selection-start-line="354" selection-start-column="15" selection-end-line="354" selection-end-column="100" />
               <folding>
                 <element signature="method#uploadFile#0;class#fileService#0" expanded="false" />
                 <element signature="method#createFolder#0;class#fileService#0" expanded="false" />
@@ -163,6 +107,8 @@
       <find>renameFile</find>
       <find>UserDaoImpl</find>
       <find>conn</find>
+      <find>errormessage</find>
+      <find>errorme</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,14 +122,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/project/ws/common/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/project/ws/services/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java" />
       </list>
     </option>
   </component>
@@ -223,7 +170,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,9 +280,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,8 +413,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -513,6 +460,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5831">
+          <caret line="491" column="44" lean-forward="false" selection-start-line="491" selection-start-column="44" selection-end-line="491" selection-end-column="44" />
+          <folding>
+            <element signature="method#getAuthorizeInfo#0;class#googleDrive#0" expanded="false" />
+            <element signature="method#RefreshToken#0;class#googleDrive#0" expanded="false" />
+            <element signature="method#getFileInfo#0;class#googleDrive#0" expanded="false" />
+            <element signature="method#deleteFile#0;class#googleDrive#0" expanded="false" />
+            <element signature="method#createFolder#0;class#googleDrive#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="341" column="59" lean-forward="false" selection-start-line="341" selection-start-column="53" selection-end-line="341" selection-end-column="59" />
+          <folding>
+            <element signature="method#uploadFile#0;class#fileService#0" expanded="false" />
+            <element signature="method#createFolder#0;class#fileService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#RefreshToken#0;class#dropbox#0" expanded="false" />
+            <element signature="method#getAuthorizeInfo#0;class#dropbox#0" expanded="false" />
+            <element signature="method#getUserInfo#0;class#dropbox#0" expanded="false" />
+            <element signature="method#getListFile#0;class#dropbox#0" expanded="false" />
+            <element signature="method#deleteFile#0;class#dropbox#0" expanded="false" />
+            <element signature="method#uploadFile#0;class#dropbox#0" expanded="false" />
+            <element signature="method#createFolder#0;class#dropbox#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5559">
           <caret line="475" column="68" lean-forward="false" selection-start-line="475" selection-start-column="68" selection-end-line="475" selection-end-column="68" />
           <folding>
@@ -530,6 +518,7 @@
         <state relative-caret-position="3111">
           <caret line="212" column="40" lean-forward="false" selection-start-line="212" selection-start-column="40" selection-end-line="212" selection-end-column="40" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getFileName#0;class#Utils#0" expanded="false" />
             <element signature="e#6508#6560#0" expanded="false" />
             <element signature="e#7341#7408#0" expanded="false" />
@@ -578,18 +567,11 @@
         <state relative-caret-position="1292">
           <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
           <folding>
+            <element signature="imports" expanded="false" />
             <element signature="method#getFileName#0;class#Utils#0" expanded="false" />
             <element signature="e#6508#6560#0" expanded="false" />
             <element signature="e#7341#7408#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,19 +580,11 @@
         <state relative-caret-position="68">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#293#294#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,19 +593,11 @@
         <state relative-caret-position="154">
           <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#getFileName#0;class#Utils#0" expanded="false" />
             <element signature="e#6508#6560#0" expanded="false" />
             <element signature="e#7341#7408#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,31 +609,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#signin#0;class#UserDaoImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="341" column="59" lean-forward="false" selection-start-line="341" selection-start-column="53" selection-end-line="341" selection-end-column="59" />
-          <folding>
-            <element signature="method#uploadFile#0;class#fileService#0" expanded="false" />
-            <element signature="method#createFolder#0;class#fileService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/googleDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="5831">
           <caret line="491" column="44" lean-forward="false" selection-start-line="491" selection-start-column="44" selection-end-line="491" selection-end-column="44" />
           <folding>
             <element signature="method#getAuthorizeInfo#0;class#googleDrive#0" expanded="false" />
@@ -681,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/apiServices/dropbox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="482" column="60" lean-forward="true" selection-start-line="482" selection-start-column="60" selection-end-line="482" selection-end-column="60" />
+        <state relative-caret-position="186">
+          <caret line="482" column="60" lean-forward="false" selection-start-line="482" selection-start-column="60" selection-end-line="482" selection-end-column="60" />
           <folding>
             <element signature="method#RefreshToken#0;class#dropbox#0" expanded="false" />
             <element signature="method#getAuthorizeInfo#0;class#dropbox#0" expanded="false" />
@@ -691,6 +635,53 @@
             <element signature="method#deleteFile#0;class#dropbox#0" expanded="false" />
             <element signature="method#uploadFile#0;class#dropbox#0" expanded="false" />
             <element signature="method#createFolder#0;class#dropbox#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/fileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1993">
+          <caret line="354" column="100" lean-forward="true" selection-start-line="354" selection-start-column="15" selection-end-line="354" selection-end-column="100" />
+          <folding>
+            <element signature="method#uploadFile#0;class#fileService#0" expanded="false" />
+            <element signature="method#createFolder#0;class#fileService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/DAO/Impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2925">
+          <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/project/ws/services/userService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,14 +1,8 @@
 package com.project.ws.services;
 
 import com.project.ws.DAO.Impl.UserDaoImpl;
-import com.project.ws.Model.ErrorMessage;
 import com.project.ws.Model.ResponseMessage;
 import com.project.ws.Model.User;
-import com.project.ws.apiServices.googleDrive;
-import com.project.ws.common.Utils;
-import org.apache.commons.io.IOUtils;
-import org.jboss.resteasy.plugins.providers.multipart.InputPart;
-import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
 import org.json.simple.JSONObject;
 
 import javax.ws.rs.*;
@@ -26,8 +20,11 @@ public class userService {
     @GET
     @Produces("application/json")
     public Response getUserByToken(@Context HttpHeaders httpHeaders) {
+        JSONObject errorMessage = new JSONObject();
         if(httpHeaders.getRequestHeader("dasa-token").isEmpty()){
-            return Response.status(401).entity(new ErrorMessage(401, "Missing authorization")).build();
+
+            errorMessage.put("message", "Missing authorization");
+            return Response.status(401).entity(errorMessage).build();
         }
         String token = httpHeaders.getRequestHeader("dasa-token").get(0);
         System.out.println(token);
@@ -38,28 +35,13 @@ public class userService {
         }
 
         try {
-            Object response = userDao.getUserByToken(user);
-            if(response.getClass() == User.class){
-                return Response.ok().entity(response).build();
-            } else{
-                ErrorMessage errorResponse = (ErrorMessage) response;
-                return Response.status(errorResponse.getStatus()).entity(errorResponse).build();
-            }
+            ResponseMessage response = userDao.getUserByToken(user);
+            return  Response.status(response.getStatus()).entity(response.getResponse()).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return Response.status(502).entity(new ErrorMessage(502, "SQL query error")).build();
+            errorMessage.put("message", "SQL query error");
+            return Response.status(502).entity(errorMessage).build();
         }
-//        InputStream in =
-//                userService.class.getResourceAsStream("/client_secret.json");
-//        System.out.println(userService.class.getClassLoader().getResourceAsStream("client_secret.json"));
-//
-//        googleDrive drive = new googleDrive();
-//        drive.getAuthorizeInfo();
-//        drive.RefreshToken();
-//        drive.GetListFile();
-//        return user;
-//        String result = "Product created : " + product;
-//        return Response.status(201).entity(result).build();
 
     }
 
@@ -73,16 +55,13 @@ public class userService {
         }
         System.out.println(user);
         try {
-            Object response = userDao.createNewUser(user);
-            if(response.getClass() == User.class){
-                return Response.ok().entity(response).build();
-            } else{
-                ErrorMessage errorResponse = (ErrorMessage) response;
-                return Response.status(errorResponse.getStatus()).entity(errorResponse).build();
-            }
+            ResponseMessage response = userDao.createNewUser(user);
+            return  Response.status(response.getStatus()).entity(response.getResponse()).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return Response.status(502).entity(new ErrorMessage(502, "SQL query error")).build();
+            JSONObject errorMessage = new JSONObject();
+            errorMessage.put("message", "SQL query error");
+            return Response.status(502).entity(errorMessage).build();
         }
 //        String result = "User created : " + user;
 //        return user;
@@ -100,16 +79,13 @@ public class userService {
         }
         System.out.println(user.getUsername());
         try {
-            Object response = userDao.signin(user);
-            if(response.getClass() == User.class){
-                return Response.ok().entity(response).build();
-            } else{
-                ErrorMessage errorResponse = (ErrorMessage) response;
-                return Response.status(errorResponse.getStatus()).entity(errorResponse).build();
-            }
+            ResponseMessage response = userDao.signin(user);
+            return  Response.status(response.getStatus()).entity(response.getResponse()).build();
         } catch (SQLException e) {
             e.printStackTrace();
-            return Response.status(502).entity(new ErrorMessage(502, "SQL query error")).build();
+            JSONObject errorMessage = new JSONObject();
+            errorMessage.put("message", "SQL query error");
+            return Response.status(502).entity(errorMessage).build();
         }
 //        String result = "User created : " + user;
 //        return user;
@@ -117,16 +93,6 @@ public class userService {
 
     }
 
-    @POST
-    @Consumes("application/json")
-    @Produces("application/json")
-    public User createProductInJSON(User user) {
-
-        String result = "User created : " + user;
-        return user;
-//        return Response.status(201).entity(result).build();
-
-    }
 
 }
 

@@ -5,7 +5,6 @@ com\project\ws\DAO\UserDAO.class
 com\project\ws\services\RESTEasyHelloWorldService.class
 com\project\ws\services\DatabaseConnection.class
 com\project\ws\apiServices\dropbox.class
-com\project\ws\Model\ErrorMessage.class
 com\project\ws\MyRESTApplication.class
 com\project\ws\apiServices\googleDrive.class
 com\project\ws\Model\User.class

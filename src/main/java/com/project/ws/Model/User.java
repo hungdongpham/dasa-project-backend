@@ -1,5 +1,7 @@
 package com.project.ws.Model;
 
+import org.json.simple.JSONObject;
+
 public class User {
 
     private String username;
@@ -39,4 +41,11 @@ public class User {
         this.password = password;
     }
 
+    public JSONObject convertUserToJSONResponse(){
+        //don't need to include passwor din to the json response
+        JSONObject userObj = new JSONObject();
+        userObj.put("username", username);
+        userObj.put("token", token);
+        return userObj;
+    }
 }
